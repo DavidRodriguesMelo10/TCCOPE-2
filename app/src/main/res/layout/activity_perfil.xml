@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+
+            <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shadow_circle"
+                    android:drawableLeft="@mipmap/icon_menu_grey"
+                    android:paddingLeft="@dimen/input_padding"
+                    android:paddingTop="@dimen/input_padding"
+                    android:paddingRight="@dimen/input_padding"
+                    android:paddingBottom="@dimen/input_padding"
+                    android:scaleType="fitStart"
+                    android:text="       Home "
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_small" />
+
+            <Button
+                    android:id="@+id/btEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shadow_circle"
+                    android:drawableLeft="@mipmap/icon_menu_grey"
+                    android:paddingLeft="@dimen/input_padding"
+                    android:paddingTop="@dimen/input_padding"
+                    android:paddingRight="@dimen/input_padding"
+                    android:paddingBottom="@dimen/input_padding"
+                    android:scaleType="fitStart"
+                    android:text="       Editar dados"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_small" />
+
+            <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shadow_circle"
+                    android:drawableLeft="@mipmap/arrow_back_grey"
+                    android:paddingLeft="@dimen/input_padding"
+                    android:paddingTop="@dimen/input_padding"
+                    android:paddingRight="@dimen/input_padding"
+                    android:paddingBottom="@dimen/input_padding"
+                    android:scaleType="fitStart"
+                    android:text="        Sair"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

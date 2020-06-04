@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/ibBack"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:background="@color/iceWhite"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/arrow_back_grey" />
+
+        </LinearLayout>
+
+
+        <TextView
+                android:id="@+id/textTitleToolbar"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:gravity="center_vertical"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+        <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:adjustViewBounds="true"
+                android:background="@color/iceWhite"
+                android:paddingLeft="0dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_menu_grey" />
+
+    </LinearLayout>
+</LinearLayout>

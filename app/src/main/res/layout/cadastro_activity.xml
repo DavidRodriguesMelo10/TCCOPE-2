@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_gravity="center"
+         android:background="@drawable/gradient"
+         android:layout_height="match_parent">
+
+
+    <include
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar" />
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastros"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                >
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editName"/>
+
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="textPersonName"
+                    android:hint="Sobrenome"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editLastName"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAllCaps="false"
+                    android:textAlignment="viewStart"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editEmail"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="phone"
+                    android:hint="Telefone"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editPhone"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="text"
+                    android:hint="Endereço"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editAdress"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="text"
+                    android:hint="Dependentes"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editDep"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="number"
+                    android:hint="Quantidade de Filhos/Dependentes"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/editQtd"/>
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    android:inputType="text"
+                    android:hint="Info Adcionais"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/editInfo"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+    <Button
+            android:text="Salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/black"
+            android:id="@+id/buttonLogin"
+            android:background="@drawable/shadow_circle"/>
+
+    </LinearLayout>
+</LinearLayout>
